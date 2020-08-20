@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/branco"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_b_sica"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"/>
+
+    <EditText
+        android:id="@+id/etProceso"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitulo"
+        android:ellipsize="end"
+        android:text=""
+        android:singleLine="true"
+        android:textSize="28sp"
+        android:textColor="@color/preto"/>
+
+    <Button
+        android:id="@+id/numero_sete"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_7"
+        android:textSize="28sp"
+        android:layout_below="@+id/etProceso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/numero_oito"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_8"
+        android:textSize="28sp"
+        android:layout_below="@+id/etProceso"
+        android:layout_toRightOf="@+id/numero_sete"
+        android:layout_toEndOf="@+id/numero_sete" />
+    <Button
+        android:id="@+id/numero_nove"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_9"
+        android:textSize="28sp"
+        android:layout_below="@+id/etProceso"
+        android:layout_toRightOf="@+id/numero_oito"
+        android:layout_toEndOf="@+id/numero_oito" />
+    <Button
+        android:id="@+id/divisao"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/divisao"
+        android:textSize="28sp"
+        android:layout_below="@+id/etProceso"
+        android:layout_toRightOf="@+id/numero_nove"
+        android:layout_toEndOf="@+id/numero_nove" />
+
+    <Button
+        android:id="@+id/numero_quatro"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_4"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_sete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"/>
+
+
+    <Button
+        android:id="@+id/numero_cinco"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_5"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_oito"
+        android:layout_toRightOf="@+id/numero_quatro"
+        android:layout_toEndOf="@+id/numero_quatro" />
+    <Button
+        android:id="@+id/numero_seis"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_6"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_nove"
+        android:layout_toRightOf="@+id/numero_cinco"
+        android:layout_toEndOf="@+id/numero_cinco" />
+    <Button
+        android:id="@+id/multiplicacao"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/x"
+        android:textSize="28sp"
+        android:layout_below="@+id/divisao"
+        android:layout_toRightOf="@+id/numero_seis"
+        android:layout_toEndOf="@+id/numero_seis" />
+    <Button
+        android:id="@+id/numero_um"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_1"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_quatro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/numero_dois"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_2"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_cinco"
+        android:layout_toRightOf="@+id/numero_um"
+        android:layout_toEndOf="@+id/numero_um" />
+    <Button
+        android:id="@+id/numero_tres"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_3"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_seis"
+        android:layout_toRightOf="@+id/numero_dois"
+        android:layout_toEndOf="@+id/numero_dois" />
+    <Button
+        android:id="@+id/subtracao"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/subtracao"
+        android:textSize="28sp"
+        android:layout_below="@+id/multiplicacao"
+        android:layout_toRightOf="@+id/numero_tres"
+        android:layout_toEndOf="@+id/numero_tres" />
+
+    <Button
+        android:id="@+id/ponto"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/ponto"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_um"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/numero_zero"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/_0"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_dois"
+        android:layout_toRightOf="@+id/ponto"
+        android:layout_toEndOf="@+id/ponto" />
+    <Button
+        android:id="@+id/igual"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/igual"
+        android:textSize="28sp"
+        android:layout_below="@+id/numero_tres"
+        android:layout_toRightOf="@+id/numero_zero"
+        android:layout_toEndOf="@+id/numero_zero" />
+    <Button
+        android:id="@+id/adicao"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:text="@string/adicao"
+        android:textSize="28sp"
+        android:layout_below="@+id/subtracao"
+        android:layout_toRightOf="@+id/igual"
+        android:layout_toEndOf="@+id/igual" />
+    <Button
+        android:id="@+id/limpar"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:text="@string/c"
+        android:textSize="28sp"
+        android:layout_below="@+id/ponto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp" />
+
+
+</RelativeLayout>
